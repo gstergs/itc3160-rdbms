@@ -1,0 +1,6 @@
+SELECT 
+    projno, projname 
+FROM   
+    EMPLPROJECTS 
+WHERE 
+    empid=101;

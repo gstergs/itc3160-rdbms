@@ -1,0 +1,11 @@
+SELECT 
+    w2.firstname || ' ' || w2.lastname AS "Employee Name",
+    Rating AS "Employee Rating"    
+FROM 
+  project p 
+JOIN worker w1 ON p.projmgrid = w1.empid
+JOIN assign a ON p.projno = a.projno
+JOIN worker w2 ON a.empid = w2.empid
+WHERE   
+  w1.firstname = 'Michael' AND w1.lastname = 'Burns'
+ORDER BY w2.firstname || ' ' ||  w2.lastname;

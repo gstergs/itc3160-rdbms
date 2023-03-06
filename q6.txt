@@ -1,0 +1,11 @@
+SELECT 
+    projno, 
+    projname, 
+    projmgrid, 
+    startdate, 
+    expecteddurationweeks
+FROM 
+    project
+WHERE 
+    budget = (SELECT MAX(budget) FROM project);
+ 

@@ -1,0 +1,6 @@
+SELECT 
+    firstname, lastname
+FROM 
+    worker w
+WHERE 
+    w.departmentid = 2 AND salary = (SELECT MIN(salary) FROM Worker where departmentid=2);

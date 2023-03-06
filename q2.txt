@@ -1,0 +1,6 @@
+SELECT 
+  *
+FROM 
+  Project
+WHERE 
+  PROJNAME LIKE '%urn%';

@@ -1,0 +1,6 @@
+SELECT 
+    empid as "Worker ID", 
+    firstname || ' ' || lastname as "Worker Name", 
+    round(salary/12, 2) AS "Monthly Salary"
+FROM 
+    Worker;

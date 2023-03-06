@@ -1,0 +1,22 @@
+INSERT INTO worker(worker.firstname, worker.lastname, worker.empid, worker.departmentid, worker.birthdate, worker.hiredate, worker.salary)
+VALUES ('Gabriel', 'Stergiou', '181444', 2, '01-APR-02','02-FEB-15', '100000');
+
+INSERT INTO assign(assign.projno, assign.empid, assign.hoursassigned, assign.rating)
+VALUES (1031, 181444, 10, 5);
+
+
+INSERT INTO assign(assign.projno, assign.empid, assign.hoursassigned, assign.rating)
+VALUES (1041, 181444, 9, 4);
+
+
+INSERT INTO worker(worker.firstname, worker.lastname, worker.empid, worker.departmentid, worker.birthdate, worker.hiredate, worker.salary)
+VALUES ('Alexandros', 'Rountos', '181555', 2, '01-JAN-01','03-MAR-16', '100000');
+
+INSERT INTO assign(assign.projno, assign.empid, assign.hoursassigned, assign.rating)
+VALUES (1005, 181555, 8, 5);
+
+
+INSERT INTO assign(assign.projno, assign.empid, assign.hoursassigned, assign.rating)
+VALUES (1001, 181555, 7, 4);
+
+select * from EMPLPROJECTS;

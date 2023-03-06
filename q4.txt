@@ -1,0 +1,10 @@
+SELECT 
+    w.firstname, w.lastname
+FROM 
+    Worker w    
+JOIN assign  ON w.empid = assign.empid
+JOIN project ON project.projno = assign.projno
+WHERE  
+    project.projno = '1001'
+ORDER BY 
+    w.lastname;

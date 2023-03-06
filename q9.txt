@@ -1,0 +1,7 @@
+CREATE VIEW EMPLPROJECTS AS
+    SELECT 
+        p.projno, p.projname, w.empid, w.firstname, w.lastname  
+    FROM
+        project p
+JOIN assign a ON a.projno = p.projno
+JOIN worker w ON a.empid = w.empid;
