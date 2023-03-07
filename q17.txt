@@ -1,0 +1,14 @@
+Q17 Add a field called STATUS to the project table (Sample values for this field are active, completed, planned or cancelled). Update the PROJECTS table and make some of them ‘active’, one ‘completed’ and one ‘cancelled’. Display a list of all ‘active’ projects.
+
+ALTER TABLE PROJECT
+ADD STATUS varchar(20);
+
+UPDATE PROJECT SET STATUS = 'PLANNED';
+UPDATE PROJECT SET STATUS = 'ACTIVE' WHERE PROJNAME = 'Jupiter' ;
+UPDATE PROJECT SET STATUS = 'ACTIVE' WHERE PROJNAME = 'Saturn';
+UPDATE PROJECT SET STATUS = 'ACTIVE' WHERE PROJNAME = 'Mercury';
+UPDATE PROJECT SET STATUS = 'COMPLETED' WHERE PROJNAME = 'Neptune';
+UPDATE PROJECT SET STATUS = 'CANCELLED' WHERE PROJNAME = 'Pluto';
+UPDATE PROJECT SET STATUS = 'ACTIVE' WHERE PROJNAME = 'MarcoPolo';
+
+SELECT * FROM PROJECT WHERE STATUS = 'ACTIVE';

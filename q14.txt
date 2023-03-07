@@ -1,0 +1,4 @@
+Q14 For each project, list the project number, how many workers are assigned to it and how many hours they are assigned for.
+
+
+SELECT  PROJNO, COUNT(EMPID), SUM(HOURSASSIGNED) FROM ASSIGN GROUP BY ASSIGN.PROJNO ORDER BY PROJNO;

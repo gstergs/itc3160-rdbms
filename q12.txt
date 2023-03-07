@@ -1,0 +1,3 @@
+Q12 Change the hours which employee 110 is assigned to project 1019 for from 20 to 10.
+UPDATE ASSIGN SET HOURSASSIGNED = 10 WHERE PROJNO = '1019' AND EMPID = '110';
+SELECT * FROM ASSIGN WHERE PROJNO = '1019' AND EMPID = '110';

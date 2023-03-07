@@ -1,0 +1,2 @@
+Q18 Display the employee ID and project number of all employees who have no ratings on that project.
+SELECT EMPID, PROJNO FROM ASSIGN WHERE RATING IS NULL ORDER BY EMPID;
